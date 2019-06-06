@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>ЮБИЛЕЙ ДОМАЩКИ 55555555</title>
+</head>
+<body>
+	<div class="block">
+		<h3 class="text">
+			"ЭТО МЕНЯ (БЕСИТ)" Конфуций. 457 в. до н.э.
+		</h3>
+		<div class="block2">
+			
+		<div class="box">
+			<button class="btn1">
+				1 ОДИН
+			</button>
+		</div>
+		<div class="box">
+			<button class="btn2">
+				2 ДВА
+			</button>
+		</div>
+		<div class="box">
+		<button class="btn3">
+				3 ТРИ
+			</button>
+		</div>
+	</div>
+</div>
+<div class="dfv">
+	<button class="btn">
+		
+	</button>
+</div>
+<script type="text/javascript">
+	let btn1 = document.querySelector('.btn1');
+	let btn2 = document.querySelector('.btn2');
+	let btn3 = document.querySelector('.btn3');
+	let btn = document.querySelector('.btn');
+	let btn4 = document.querySelector('.btn4');
+	let btn5 = document.querySelector('.btn5');
+	let prover = 1
+	let prover2 = false
+	let dfv = document.querySelector('.dfv')
+	btn1.onclick = function(){
+		if(prover == 1 && prover2 == false){
+			prover = 2
+			dfv.style.display = 'block'
+			btn.style.display = 'block'
+			prover2 = true
+		}
+		else{
+			alert('Больше нельзя')
+		}
+	}
+	btn2.onclick = function(){
+		if(prover == 2 && prover2 == false){
+			prover = 9
+			dfv.style.display = 'block'
+			btn.style.display = 'block'
+			prover2 = true
+		}
+		else{
+			alert('НЕЛЬЗЯ')
+		}
+	}
+	btn3.onclick = function(){
+		if(prover == 9 && prover2 == false){
+			prover = 10
+			alert('ТЫПЕР МОЖЗНО')
+			dfv.style.display = 'block'
+			btn.style.display = 'block'
+			dfv.style.backgroundImage = 'url()'
+		}
+		else{
+			alert('НЕЛЬЗЯ К АХМЕДУ')
+		}
+	}
+	btn.onclick = function(){
+		dfv.style.display = 'none'
+		prover2 = false
+	}
+</script>
+</body>
+</html>
